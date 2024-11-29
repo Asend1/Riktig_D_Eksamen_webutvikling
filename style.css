@@ -1,0 +1,263 @@
+body {
+  margin: 10px;
+}
+
+.navigasjon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav_knapper {
+  text-decoration: none;
+  color: black;
+}
+
+#section {
+  background-color: gray;
+  display: grid;
+  justify-content: end;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#button1, #button2, #button3 {
+  background-color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.products {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+.product-image {
+  width: 300px; 
+}
+
+.product-name, .product-name_1 {
+  margin: 0;
+}
+
+.product-price {
+  margin-top: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+  gap: 10px;
+}
+
+#Category1, #Category2, #Category4, #Category5 {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  height: 100px;
+  align-items: center;
+  margin: 0;
+}
+
+#Category3 {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  height: 200px;
+  align-items: center;
+  margin: 0;
+}
+
+.anmeldelse {
+  border: ridge;
+  margin: 10px;
+}
+
+.footer {
+  border-top: solid;
+}
+
+.informasjon_footer, .Shortcut_footer, .Sosiale_Medier {
+  padding: 0;
+  list-style: none;
+}
+
+.Snarveier, .SMO_Ikoner {
+  text-decoration: none;
+  color: black;
+}
+
+.ikoner {
+  width: 15px; 
+}
+
+.opplysninger {
+  display: grid;
+  padding: 20px;
+}
+
+#Levering-container {
+  padding: 20px;
+}
+
+.form, .kort_skjema {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.knapp {
+  background-color: gray;
+  width: fit-content;
+  color: white;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-info-image, .produkt_bilder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info_bilder {
+  width: 345px;
+}
+
+
+@media (max-width: 375px) {
+  .navigasjon {
+      grid-template-columns: 1fr; 
+      gap: 10px;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  #button1, #button2, #button3 {
+      font-size: 14px;
+      padding: 8px 10px;
+  }
+
+  .products {
+      grid-template-columns: 1fr;
+  }
+
+  .product-image {
+      width: 100%; 
+      max-width: 355px;
+  }
+
+  .grid-container {
+      grid-template-rows: auto; 
+      gap: 5px;
+  }
+
+  #Category1, #Category2, #Category3, #Category4, #Category5 {
+      height: auto; 
+      padding: 10px;
+  }
+
+  .ikoner, .SMO_Ikoner {
+      width: 10px; 
+  }
+
+  .info_bilder {
+      width: 100%;
+      max-width: 345px;
+  }
+
+  .form, .kort_skjema {
+      padding: 5px;
+  }
+
+  .knapp {
+      font-size: 14px;
+      padding: 5px 10px;
+  }
+
+  .checkbox {
+      flex-direction: column;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .product-image {
+      width: 350px; 
+  }
+
+  .ikoner {
+      width: 20px; 
+  }
+
+  #button1, #button2, #button3 {
+      font-size: 20px;
+  }
+
+  .footer {
+      padding: 20px;
+  }
+
+  .navigasjon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Sosiale_Medier{
+    display: flex;
+    gap: 20px;
+  }
+
+  .buttons{
+    display: flex;
+    gap: 20px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: 386px 386px 386px 864px 300px;
+    gap:10px;
+  }
+
+  .anmeldelser {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .ikoner, .SMO_Ikoner {
+    width: 10px; 
+}
+  .footer-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ikoner-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
